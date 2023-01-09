@@ -15,61 +15,12 @@ Atau Bapak Ibu cukup menginstall requirements.txt dengan cara berikut
 pip install -r requirements.txt
 ```
 
-## Rubics
+## Background
 
-- Environment preparation (2 points)
-- Finding the right key to scrap the data  & Extracting the right information (5 points)
-- Creating data frame & Data wrangling (5 points)
-- Creating a tidy python notebook as a report. (2 points)
-- Implement it on flask dashboard (2 points)
+The exchange rate between two currencies is usually determined by each country's economic activity, market interest rates, gross domestic product and unemployment rate. Commonly referred to as market exchange rates, they are set in global financial markets where banks and other financial institutions trade currencies around the clock based on these factors. Rate changes can be made in small hourly or daily changes, or in large incremental shifts. In this project, we will try to visualize the movement of the Indonesian Rupiah (IDR) price toward US Dollars (USD).
+----------
+Nilai tukar antara dua mata uang biasanya ditentukan oleh aktivitas ekonomi masing-masing negara, suku bunga pasar, produk domestik bruto, dan tingkat pengangguran. Biasanya disebut sebagai nilai tukar pasar, mereka ditetapkan di pasar keuangan global di mana bank dan lembaga keuangan lainnya memperdagangkan mata uang sepanjang waktu berdasarkan faktor-faktor ini. Perubahan tarif dapat dilakukan dalam perubahan kecil per jam atau harian, atau dalam perubahan bertahap yang besar. Dalam proyek ini, kami akan mencoba memvisualisasikan pergerakan harga Rupiah Indonesia (IDR) terhadap Dolar Amerika Serikat (USD).
 
+## Conclusion
 
-## What You Need to Do
-
-* Silahkan mencoba melakukan scraping soal di bawah menggunakan `beautiful soup` di notebook Bapak/Ibu terlebih dahulu.
-* Bapak/Ibu dapat men-clone repo ini.
-* Silahkan buka notebook template pada capstone ini dan isi sesuai dengan arahan yang ada. Pastikan Bapak/Ibu memberikan analisa yang dibutuhkan pada notebook tersebut.
-* File di repo ini adalah skeleton yang dapat digunakan untuk membuat flask dashboard sederhana.
-* Silahkan isi di bagian yang masih kosong.
-* Isi fungsi `scrap` dengan proses scraping yang sudah Bapak/Ibu lakukan di notebook. 
-
-```python
-table = soup.find(___)
-tr = table.find_all(___)
-```
-
-* Isi bagian ini untuk menyimpan hasil scrap yang Bapak/Ibu buat menjadi sebuah dataframe.
-
-```python
-df = pd.DataFrame(name of your tupple, columns = (name of the columns))
-```
-
-* Terakhir Bapak/Ibu dapat menggunakan fungsi `scrap` dengan cara mengisi bagian berikut dengan link web yang Bapak/Ibu scrap.
-
-```python
-df = scrap(___) #insert url here
-```
-
-* Bapak/Ibu juga dapat bermain dengan UI nya pada `index.html` yang dimana Bapak/Ibu dapat mengikuti comment yang ada untuk mengetahui bagian mana yang dapat diubah. 
-
-### The Final Mission
-
-Pada captsone kali ini, Bapak Ibu bisa memilih salah satu soal ini untuk dikerjakan.
-
-1. (Easy) Data Volume Penjualan Ethereum dari `https://www.coingecko.com/en/coins/ethereum/historical_data?start_date=2022-01-01&end_date=2022-12-30#panel`
-
-   * Dari halaman tersebut carilah `Date`, dan `Volume`.
-   * Buat lah plot pergerakan volume perdagangan dari Ethereum. 
-
-2. (Medium) Data kurs US Dollar ke rupiah dari `https://www.exchange-rates.org/history/IDR/USD/T`
-
-    * Dari halaman tersebut carilah `harga harian`, dan `tanggal`
-    * Bualah plot pergerakan kurs USD 
-    
-3. (Hard) Data film yang rilis di tahun 2021 dari `https://www.imdb.com/search/title/?release_date=2021-01-01,2021-12-31`
-
-    * Dari Halaman tersebut carilah `judul` , `imdb rating` , `metascore`, dan `votes`
-    * Buatlah plot dari 7 film paling populer di tahun 2021.
-
-
-Happy learning! 
+Grafik pergerakan kurs harga Indonesian Rupiahs terhadap US Dollar menunjukkan kenaikan pada rentang bulan September 2022  hingga awal tahun 2023. Harga IDR paling tinggi terdapat di bulan Januari 2023, sementara harga IDR paling rendah terdapat pada bulan Juli,2022. Kenaikan harga rupiah adalah indikasi bahwa nilai mata uang Indonesia semakin melemah terhadap nilai mata uang USD. Fenomena ini dapat disebabkan oleh berbagai faktor seperti inflasi, naiknya suku bunga acuan US dan situasi perdagangan global.
